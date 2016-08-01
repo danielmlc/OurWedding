@@ -3,7 +3,7 @@
 Primary style
 
 -------------------------------- */
-html * {
+/* html * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -13,13 +13,13 @@ html * {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-
-body {
+ */
+/* body {
   font-size: 100%;
   color: #7f8c97;
   background-color: #e9f0f5;
 }
-
+ */
 
 
 img {

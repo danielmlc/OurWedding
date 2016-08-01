@@ -10,6 +10,8 @@ var routerApp = angular.module('routerApp', ['ui.router']);
 routerApp.run(function($rootScope, $state, $stateParams) {
     $rootScope.$state = $state;
     $rootScope.$stateParams = $stateParams;
+    
+  
 });
 
 /**
@@ -29,8 +31,22 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
                 '': {
                     templateUrl: 'tpls/home.html'
                 },
-                'menu@index': {
-                    templateUrl: 'tpls/menu.html'
+                 'main@index': {
+                    templateUrl: 'tpls/main.html'
+                }
+            }   
+        })
+        .state('index.story',{
+            url:'/story',
+            views:{     'main@index': {
+                    templateUrl: 'tpls/story.html'
+                }
+            }
+        })
+        .state('index.picture',{
+            url:'/picture',
+            views:{     'main@index': {
+                    templateUrl: 'tpls/picture.html'
                 }
             }
         })
